@@ -74,7 +74,7 @@ export default function WebSocketChat() {
     // Connect to WebSocket server
     const connectWebSocket = () => {
       try {
-        wsRef.current = new WebSocket(`ws://localhost:8000/ws?token=${token}`)
+        wsRef.current = new WebSocket(`wss://d0co0ggg8wkgcsw88088kowg.coolify.agnieve.com/ws?token=${token}`)
 
         wsRef.current.onopen = () => {
           setConnected(true)
